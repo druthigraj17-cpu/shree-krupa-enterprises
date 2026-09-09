@@ -58,7 +58,6 @@ export default function Header() {
           </button>
         </div>
       </header>
-      <div className={`nav-overlay ${open ? 'open' : ''}`} onClick={() => setOpen(false)} style={{ display: open ? 'block' : undefined }} />
     </>
   );
 }

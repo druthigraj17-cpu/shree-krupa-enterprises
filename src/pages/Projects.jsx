@@ -24,11 +24,11 @@ export default function Projects() {
       <section className="section">
         <div className="container">
           <SectionHead eyebrow="Portfolio" title="Powering India's landmark facilities" lead="The network of clients we work with includes prominent companies across manufacturing, technology, retail and healthcare." />
-          <div className="grid grid-2" style={{ gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))' }}>
+          <div className="grid grid-3">
             {projectCards.map((p, i) => (
               <Reveal key={i}>
                 <div className="project">
-                  <div className="project-img"><img src={IMG[p.img]} alt={`Project for ${p.name}`} loading="lazy" /></div>
+                  <div className="project-img"><img src={IMG[p.img]} alt={`Project for ${p.name}`} loading="lazy" style={{ objectFit: 'contain', padding: '12px' }} /></div>
                   <div className="project-body">
                     <span className="tag">{p.tag}</span>
                     <h3>{p.name}</h3>

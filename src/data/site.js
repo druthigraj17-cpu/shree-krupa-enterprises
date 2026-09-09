@@ -35,7 +35,7 @@ export const IMG = {
   n8: 'https://www.shreekrupaenterprise.in/images/8.jpg',
   n9: 'https://www.shreekrupaenterprise.in/images/9.jpg',
   n10: 'https://www.shreekrupaenterprise.in/images/10.jpg',
-  n11: 'https://www.shreekrupaenterprise.in/images/11.jpg',
+  n11: '/assets/lokesh.jpg',
   n12: 'https://www.shreekrupaenterprise.in/images/12.jpg',
   electrification: 'https://www.shreekrupaenterprise.in/images/electrification.jpg',
   design: 'https://www.shreekrupaenterprise.in/images/design.jpg',

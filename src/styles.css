@@ -132,8 +132,8 @@ p{color:var(--text)}
   .nav a{padding:14px 12px;border-bottom:1px solid var(--border);border-radius:0}
   .nav-cta{margin:16px 0 0}
   .menu-toggle{display:block}
-  .nav-overlay{position:fixed;inset:0;background:rgba(26,26,26,.55);z-index:1050;opacity:0;visibility:hidden;transition:.3s}
-  .nav-overlay.open{opacity:1;visibility:visible}
+.nav-overlay{position:fixed;inset:0;background:rgba(26,26,26,.55);z-index:1050;opacity:0;visibility:hidden;transition:.3s;pointer-events:none}
+.nav-overlay.open{opacity:1;visibility:visible;pointer-events:auto}
 }
 .nav-close{display:none;position:absolute;top:20px;right:20px;background:var(--teal-50);border:none;color:var(--teal-700);width:42px;height:42px;border-radius:12px;font-size:1.6rem;cursor:pointer;align-items:center;justify-content:center;line-height:1;transition:.2s}
 .nav-close:hover{background:var(--lime-400);color:#0C4A6E;transform:rotate(90deg)}
@@ -546,8 +546,8 @@ p{color:var(--text)}
 .hv-card{position:absolute;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-radius:18px;padding:16px 20px;box-shadow:var(--shadow-lg);text-align:center;border:1px solid rgba(255,255,255,.6)}
 .hv-card .hv-num{font-family:var(--font-heading);font-weight:800;font-size:1.8rem;color:var(--teal-700);line-height:1}
 .hv-card .hv-lbl{font-size:.78rem;color:var(--muted);font-weight:600;margin-top:6px;letter-spacing:.02em}
-.hv-card-a{top:-24px;right:-18px;transform:rotate(3deg)}
-.hv-card-b{bottom:-26px;left:-24px;transform:rotate(-3deg)}
+.hv-card-a{bottom:-26px;left:-24px;transform:rotate(-3deg)}
+.hv-card-b{top:-24px;right:-18px;transform:rotate(3deg)}
 .hv-card .hv-num::after{content:""}
 .hv-card-a .hv-num{color:var(--teal-700)}
 .hv-card-b .hv-num{color:var(--lime-500)}
