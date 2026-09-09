@@ -9,6 +9,8 @@ import Projects from './pages/Projects.jsx';
 import Clients from './pages/Clients.jsx';
 import Contact from './pages/Contact.jsx';
 import Privacy from './pages/Privacy.jsx';
+import AparWiresCables from './pages/AparWiresCables.jsx';
+import LuminousInvertersBatteries from './pages/LuminousInvertersBatteries.jsx';
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
         <Route path="director-message" element={<DirectorMessage />} />
         <Route path="services" element={<Services />} />
         <Route path="products" element={<Products />} />
+        <Route path="products/apar-wires-cables" element={<AparWiresCables />} />
+        <Route path="products/luminous-inverters-batteries" element={<LuminousInvertersBatteries />} />
         <Route path="projects" element={<Projects />} />
         <Route path="clients" element={<Clients />} />
         <Route path="contact" element={<Contact />} />

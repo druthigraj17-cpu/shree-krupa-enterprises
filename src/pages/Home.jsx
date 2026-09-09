@@ -6,7 +6,6 @@ import Reveal from '../components/Reveal.jsx';
 import CountUp from '../components/CountUp.jsx';
 import FaqAccordion from '../components/FaqAccordion.jsx';
 import SEO from '../components/SEO.jsx';
-import { faqs } from '../data/products.js';
 
 const values = [
   { ic: '💡', h: 'Innovation', p: 'New technology applied to develop efficient, customized MEP solutions.' },
@@ -17,17 +16,109 @@ const values = [
 
 const tileImages = ['electrification', 'design', 'statutory', 'elv', 'ht', 'ups'];
 
+const homeFaqs = [
+  { q: 'What services does Shree Krupa Enterprises provide?', a: 'We provide comprehensive MEP services including internal and external electrification, design and engineering, statutory approvals (CEIG, ESCOMS, Fire Office, KSPCB), ELV works, HT power, AMC, energy audits and interior fit-outs.' },
+  { q: 'Where is Shree Krupa Enterprises located?', a: 'We are based in Yelahanka, Bangalore, Karnataka. Our office is at #35, 1st Floor, 8th Main, Anantapur, Yelahanka, Bangalore - 560064.' },
+  { q: 'What areas does Shree Krupa Enterprises serve?', a: 'We serve industrial and commercial companies across India, with our base in Yelahanka, Bangalore, Karnataka.' },
+  { q: 'Does Shree Krupa handle commercial and industrial electrical works?', a: 'Yes. We handle turnkey electrification projects for commercial and industrial facilities — from design and installation to testing and commissioning, compliant with CEIG, NBC and IS/IEC codes.' },
+  { q: 'What electrical products does Shree Krupa supply?', a: 'We supply APAR and KEI wires and cables, Luminous inverters and solar panels, Eaton and Schneider/Luminous UPS systems, inverter batteries, pumps, fans, lighting and solar water heaters.' },
+  { q: 'How can I contact Shree Krupa for an electrical project?', a: 'You can call us at ' + SITE.phone1 + ', email ' + SITE.email + ' or visit our office in Yelahanka, Bangalore. Share your requirements and our team will provide a quotation.' },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.shreekrupaenterprise.in/#organization",
+      "name": "Shree Krupa Enterprises",
+      "url": "https://www.shreekrupaenterprise.in",
+      "description": "Class-1 Licensed Electrical Contracting company delivering comprehensive MEP solutions — electrical, ELV, HT, UPS, fire safety and facility management — across India since 2012.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#35, 1st Floor, 8th Main, Anantapur, Yelahanka",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "postalCode": "560064",
+        "addressCountry": "IN"
+      },
+      "telephone": SITE.phone1,
+      "email": SITE.email,
+      "foundingDate": "2012",
+      "sameAs": []
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.shreekrupaenterprise.in/#localbusiness",
+      "name": "Shree Krupa Enterprises",
+      "parentOrganization": { "@id": "https://www.shreekrupaenterprise.in/#organization" },
+      "url": "https://www.shreekrupaenterprise.in",
+      "description": "Class-1 Licensed Electrical Contractor in Bangalore providing MEP services, electrical wires and cables, Luminous inverters, UPS systems and power backup solutions.",
+      "image": "https://www.shreekrupaenterprise.in/images/4.jpg",
+      "telephone": SITE.phone1,
+      "email": SITE.email,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#35, 1st Floor, 8th Main, Anantapur, Yelahanka",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "postalCode": "560064",
+        "addressCountry": "IN"
+      },
+      "areaServed": ["Bangalore", "Karnataka", "India"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Electrical Services and Products",
+        "itemListElement": [
+          { "@type": "OfferCatalog", "name": "MEP Electrical Services" },
+          { "@type": "OfferCatalog", "name": "Wires and Cables Supply" },
+          { "@type": "OfferCatalog", "name": "Inverters, UPS and Power Backup" },
+          { "@type": "OfferCatalog", "name": "ELV and Fire Safety Systems" }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.shreekrupaenterprise.in/#website",
+      "name": "Shree Krupa Enterprises",
+      "url": "https://www.shreekrupaenterprise.in",
+      "publisher": { "@id": "https://www.shreekrupaenterprise.in/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.shreekrupaenterprise.in/#webpage",
+      "name": "Shree Krupa Enterprises | Class-1 MEP Electrical Contractor Bangalore",
+      "description": "Shree Krupa Enterprises is a Class-1 Licensed Electrical Contracting company delivering comprehensive MEP solutions across India since 2012.",
+      "url": "https://www.shreekrupaenterprise.in",
+      "isPartOf": { "@id": "https://www.shreekrupaenterprise.in/#website" },
+      "about": { "@id": "https://www.shreekrupaenterprise.in/#organization" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shreekrupaenterprise.in/" }
+      ]
+    }
+  ]
+};
+
 export default function Home() {
   return (
     <>
-      <SEO title="Class-1 MEP Electrical Contractor Bangalore" description="Shree Krupa Enterprises is a Class-1 Licensed Electrical Contracting company delivering comprehensive MEP solutions — electrical, ELV, HT, UPS, fire safety and facility management — across India since 2012." />
+      <SEO
+        title="Class-1 MEP & Electrical Contractor in Bangalore"
+        description="Shree Krupa Enterprises is a Class-1 Licensed Electrical Contractor in Bangalore providing MEP services, electrical wires and cables, Luminous inverters, UPS systems and power backup solutions across India since 2012."
+        canonical="https://www.shreekrupaenterprise.in/"
+        ogImage="https://www.shreekrupaenterprise.in/images/4.jpg"
+        jsonLd={jsonLd}
+      />
 
       {/* HERO */}
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <span className="hero-eyebrow">Symbol of Excellence · Est. 2012</span>
-            <h1>Reaching possibilities with expert MEP solutions.</h1>
+            <span className="hero-eyebrow">Symbol of Excellence · Est. 2012 · Yelahanka, Bangalore</span>
+            <h1>Class-1 MEP & Electrical Contractor in Bangalore</h1>
             <p>We are a Class-1 Licensed Electrical Contracting company delivering end-to-end Mechanical, Electrical &amp; Plumbing services to India's most prominent enterprises — from design to commissioning.</p>
             <div className="hero-cta">
               <Link to="/contact" className="btn btn-primary">Request a Quote</Link>
@@ -75,7 +166,7 @@ export default function Home() {
                   <div>
                     <h3 style={{ fontSize: '1.3rem', color: 'var(--teal-800)', marginBottom: 12 }}>Shree Krupa Enterprises</h3>
                     <p style={{ color: 'var(--muted)' }}>A Class-1 Licensed Electrical Contracting company that provides extensive services in the MEP (Mechanical, Electrical and Plumbing) segment. Our team believes in driving innovation and exceeding our clients' expectations across every touchpoint of the project lifecycle.</p>
-                    <p style={{ color: 'var(--muted)', marginTop: 10 }}>We also extend financial support to charitable organizations, run tree-plantation drives around Bengaluru and conduct electrical fire-safety awareness programs in schools and colleges.</p>
+                    <p style={{ color: 'var(--muted)', marginTop: 10 }}>We supply APAR and KEI wires and cables, Luminous inverters and batteries, Eaton and Schneider UPS systems, and complete power backup solutions for homes, offices and industrial facilities across Bangalore and Karnataka.</p>
                   </div>
                   <div>
                     <ul className="check-list">
@@ -86,7 +177,7 @@ export default function Home() {
                       <li>HT Power Sanction &amp; HT Works</li>
                       <li>AMC &amp; Facility Management</li>
                       <li>Electrical Safety &amp; Energy Audits</li>
-                      <li>UPS Sales (Eaton · Schneider)</li>
+                      <li>UPS Sales (Eaton · Schneider · Luminous)</li>
                     </ul>
                     <Link to="/about" className="btn btn-primary" style={{ marginTop: 6 }}>More About Us</Link>
                   </div>
@@ -120,8 +211,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* VALUES */}
+      {/* PRODUCTS HIGHLIGHT */}
       <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <div><span className="eyebrow">Electrical Products</span><h2>Trusted brands, genuine products</h2></div>
+            <p className="head-lead">We supply APAR and KEI wires, Luminous inverters and batteries, UPS systems, and power backup solutions for residential, commercial and industrial projects across Bangalore.</p>
+          </div>
+          <div className="tile-row tile-grid-2">
+            <Reveal>
+              <div className="tile">
+                <h3>APAR Wires & Cables</h3>
+                <p>House wiring, industrial cabling and power distribution — supplying APAR and KEI wires and cables across Bangalore.</p>
+                <Link to="/products/apar-wires-cables" className="tile-link">View APAR Products &rarr;</Link>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div className="tile">
+                <h3>Luminous Inverters & UPS</h3>
+                <p>Luminous inverters, Eaton and Schneider UPS systems, and power backup solutions for homes, offices and commercial facilities.</p>
+                <Link to="/products/luminous-inverters-batteries" className="tile-link">View Luminous Products &rarr;</Link>
+              </div>
+            </Reveal>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: 24 }}>
+            <Link to="/products" className="btn btn-primary">View All Products</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* VALUES */}
+      <section className="section section-alt">
         <div className="container">
           <div className="section-head">
             <div><span className="eyebrow">Why Choose Us</span><h2>The principles behind every project</h2></div>
@@ -155,8 +275,8 @@ export default function Home() {
           <div className="intro-split">
             <Reveal>
               <span className="eyebrow">Authorized Channel Partner</span>
-              <h2>Eaton &amp; Schneider UPS systems</h2>
-              <p style={{ color: 'var(--muted)', margin: '16px 0' }}>As an authorized channel partner for Eaton Powerware and Luminous/Schneider UPS, we recommend, supply and maintain the right power-protection products for your loads — single-phase or three-phase.</p>
+              <h2>Eaton, Schneider &amp; Luminous UPS systems</h2>
+              <p style={{ color: 'var(--muted)', margin: '16px 0' }}>As an authorized channel partner for Eaton Powerware and Luminous/Schneider UPS, and a supplier of APAR wires and Luminous inverters, we recommend, supply and maintain the right electrical products for your project.</p>
               <Link to="/products" className="btn btn-primary">View Products</Link>
             </Reveal>
             <Reveal>
@@ -170,7 +290,7 @@ export default function Home() {
       <section className="section section-alt">
         <div className="container">
           <div className="text-center"><span className="eyebrow">FAQs</span><h2 className="section-title">Frequently Asked Questions</h2></div>
-          <FaqAccordion items={faqs} />
+          <FaqAccordion items={homeFaqs} />
         </div>
       </section>
 

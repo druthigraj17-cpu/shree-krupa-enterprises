@@ -24,12 +24,16 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
   return (
     <>
-      <SEO title="Contact Us" description="Contact Shree Krupa Enterprises for MEP, electrical, ELV, HT and UPS services in Bangalore, Karnataka and across India." />
+      <SEO
+        title="Contact Shree Krupa Enterprises — Electrical Contractor in Bangalore"
+        description="Contact Shree Krupa Enterprises for electrical contracting, MEP services and electrical product requirements in Bangalore. Based in Yelahanka, serving Karnataka."
+        canonical="https://www.shreekrupaenterprise.in/contact"
+      />
 
       <PageHero
         eyebrow="Get In Touch"
-        title="Contact Us"
-        lead="Have an MEP requirement? Share it with us and our team will respond within 24 hours."
+        title="Contact Shree Krupa Enterprises"
+        lead="Contact Shree Krupa Enterprises for electrical contracting, MEP services and electrical product requirements in Bangalore. Based in Yelahanka, serving Karnataka."
         crumb="Contact"
         asideTitle="Quick contact"
         asideItems={[`Call ${SITE.phone1}`, `Call ${SITE.phone2}`, SITE.email, 'Yelahanka, Bangalore - 560064']}
