@@ -8,10 +8,59 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <Link to="/" className="logo">
-              <span className="logo-mark">SK</span>
-              <span className="logo-text"><span>Shree Krupa</span><small>Enterprises</small></span>
-            </Link>
+            <Link
+  to="/"
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+    textDecoration: "none",
+  }}
+>
+  <img
+    src="/images/logo.jpeg"
+    alt="Shree Krupa Enterprises"
+    style={{
+      width: "65px",
+      height: "55px",
+      objectFit: "contain",
+      display: "block",
+      borderRadius: "8px",
+    }}
+  />
+
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      lineHeight: "1.1",
+    }}
+  >
+    <span
+      style={{
+        fontSize: "21px",
+        fontWeight: "800",
+        color: "#0a96ed",
+        letterSpacing: "-0.3px",
+      }}
+    >
+      Shree Krupa
+    </span>
+
+    <span
+      style={{
+        fontSize: "13px",
+        fontWeight: "600",
+        color: "#555",
+        letterSpacing: "2px",
+        textTransform: "uppercase",
+        marginTop: "5px",
+      }}
+    >
+      Enterprises
+    </span>
+  </div>
+</Link>
             <div className="footer-about">
               <p>Class-1 Licensed Electrical Contracting company delivering comprehensive MEP solutions — electrical, ELV, HT, UPS, fire safety and facility management — across India since 2012.</p>
             </div>
