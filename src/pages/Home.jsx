@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { IMG, SITE } from '../data/site.js';
 import { marqueeClients, references } from '../data/projects.js';
@@ -103,6 +104,20 @@ const jsonLd = {
 };
 
 export default function Home() {
+  const heroImages = [
+    { src: '/images/backgoround_image_1.jpeg', alt: 'Background 1' },
+    { src: '/images/backgoround_image_2.jpeg', alt: 'Background 2' },
+    { src: '/images/backgoround_image_3.jpg', alt: 'Home Background' },
+    { src: '/images/backgoround_image_4.jpg', alt: 'Second Image' },
+  ];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % heroImages.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <>
       <SEO
@@ -131,7 +146,21 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-visual">
-            <div className="hv-main"><img src={IMG.n4} alt="MEP team at work" /></div>
+            <div className="hv-main" style={{ position: 'relative', height: '420px' }}>
+              {heroImages.map((img, i) => (
+                <div
+                  key={i}
+                  style={{
+                    position: 'absolute',
+                    top: 0, left: 0, width: '100%', height: '100%',
+                    opacity: i === currentIndex ? 1 : 0,
+                    transition: 'opacity 1s ease-in-out',
+                  }}
+                >
+                  <img src={img.src} alt={img.alt} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                </div>
+              ))}
+            </div>
             <div className="hv-card hv-card-a"><CountUp className="hv-num" to={12} suffix="+" /><div className="hv-lbl">Years of Excellence</div></div>
             <div className="hv-card hv-card-b"><CountUp className="hv-num" to={450} suffix="+" /><div className="hv-lbl">Projects Delivered</div></div>
           </div>

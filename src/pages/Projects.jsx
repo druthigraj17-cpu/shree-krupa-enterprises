@@ -42,7 +42,7 @@ export default function Projects() {
         </div>
       </section>
 
-      <section className="section section-alt">
+      {/* <section className="section section-alt">
         <div className="container">
           <SectionHead eyebrow="References" title="Project references" lead="A snapshot of client / customer engagements and the nature of works we deliver." />
           <div className="table-wrap mt-lg">
@@ -58,7 +58,7 @@ export default function Projects() {
             </table>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="section">
         <div className="container">
