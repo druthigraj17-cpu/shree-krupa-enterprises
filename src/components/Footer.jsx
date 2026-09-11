@@ -62,7 +62,6 @@ export default function Footer() {
   </div>
 </Link>
             <div className="footer-about">
-              <p>Class-1 Licensed Electrical Contracting company delivering comprehensive MEP solutions — electrical, ELV, HT, UPS, fire safety and facility management — across India since 2012.</p>
             </div>
             <div className="social-row">
               <a href="#" aria-label="Facebook">{IconFB}</a>

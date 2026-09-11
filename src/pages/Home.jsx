@@ -121,8 +121,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Class-1 MEP & Electrical Contractor in Bangalore"
-        description="Shree Krupa Enterprises is a Class-1 Licensed Electrical Contractor in Bangalore providing MEP services, electrical wires and cables, Luminous inverters, UPS systems and power backup solutions across India since 2012."
+        title="Authorized Dealers For Luminous and Apar Wires"
+        description="Shree Krupa Enterprises is a  Authorized Dealers For electrical wires and cables, Luminous inverters, UPS systems and power backup solutions across India since 2012."
         canonical="https://www.shreekrupaenterprise.in/"
         ogImage="https://www.shreekrupaenterprise.in/images/4.jpg"
         jsonLd={jsonLd}
@@ -133,16 +133,14 @@ export default function Home() {
         <div className="container">
           <div className="hero-content">
             <span className="hero-eyebrow">Symbol of Excellence · Est. 2012 · Yelahanka, Bangalore</span>
-            <h1>Class-1 MEP & Electrical Contractor in Bangalore</h1>
-            <p>We are a Class-1 Licensed Electrical Contracting company delivering end-to-end Mechanical, Electrical &amp; Plumbing services to India's most prominent enterprises — from design to commissioning.</p>
+            <h1>Authorized Dealers For Luminous and Apar Wires</h1>
             <div className="hero-cta">
               <Link to="/contact" className="btn btn-primary">Request a Quote</Link>
               <Link to="/services" className="btn btn-outline">Explore Our Services &rarr;</Link>
             </div>
             <div className="pill-row">
-              <span className="pill">Internal &amp; External Electrification</span>
-              <span className="pill">ELV · Fire · CCTV · PAVA</span>
-              <span className="pill">HT Power &amp; AMC</span>
+              <span className="pill">Luminous batteries & Invetors</span>
+              <span className="pill">Apar Wires</span>
             </div>
           </div>
           <div className="hero-visual">
