@@ -1,39 +1,53 @@
 export const serviceTiles = [
   {
     no: '01',
-    title: 'Electrification & Turnkey Projects',
-    text: 'Complete internal and external electrification for industrial and commercial projects — design, installation, testing and commissioning, per CEIG, NBC and IS/IEC.',
+    title: 'UPS & Authorized Partnerships',
+    text: 'Authorized channel partner for Eaton Powerware and Luminous/Schneider UPS — sales, installation and support.',
   },
   {
     no: '02',
+    title: 'Apar Wires & Cables',
+    text: 'Authorized distributor for Apar Wires & Cables — a trusted name in electrical wires and cables for industrial and commercial applications.',
+  },
+  {
+    no: '03',
     title: 'Design & Detailed Engineering',
     text: 'Electrical layouts, load calculations and system integration built on National Building Code and IS codes of practice.',
   },
   {
-    no: '03',
+    no: '04',
     title: 'Statutory Body Approvals',
     text: 'End-to-end liaisoning with CEIG, ESCOMS, Fire Office and KSPCB so your project proceeds on time, without legal complications.',
   },
   {
-    no: '04',
+    no: '05',
     title: 'ELV · Data · Networking',
     text: 'Fire alarm systems, CCTV surveillance, PAVA, access control and structured cabling — tailored to your facility.',
   },
   {
-    no: '05',
+    no: '06',
     title: 'HT Power, AMC & Audits',
     text: 'HT power sanctioning and works, lightning protection, AMC services plus electrical safety and energy audits.',
   },
-  {
-    no: '06',
-    title: 'UPS & Authorized Partnerships',
-    text: 'Authorized channel partner for Eaton Powerware and Luminous/Schneider UPS — sales, installation and support.',
-  },
+  
 ];
 
 export const services = [
+
+
   {
     no: '01',
+    title: 'Authorized Channel Partner for Eaton & Schneider UPS',
+    image: 'ups',
+    alt: 'Eaton and Schneider UPS systems',
+    paragraphs: [
+      'Shree Krupa Enterprises is a proud authorized channel partner for Eaton Powerware and Luminous/Schneider UPS — prominent names in the UPS market known for high-performance devices that ensure a reliable power supply.',
+      'Our professional collaboration with these companies aligns with our project scope, enabling us to suggest and use the right products for the energy needs of our clients. Whether you need a single-phase UPS for lesser loads or a three-phase system for larger operations, we recommend the right product for you.',
+    ],
+  },
+  
+  {
+    no: '04',
     title: 'Complete Internal & External Electrification / Turnkey Projects',
     image: 'electrification',
     alt: 'Internal and External Electrification Works',
@@ -68,16 +82,7 @@ export const services = [
       'Karnataka State Pollution Control Board (KSPCB)',
     ],
   },
-  {
-    no: '04',
-    title: 'Authorized Channel Partner for Eaton & Schneider UPS',
-    image: 'ups',
-    alt: 'Eaton and Schneider UPS systems',
-    paragraphs: [
-      'Shree Krupa Enterprises is a proud authorized channel partner for Eaton Powerware and Luminous/Schneider UPS — prominent names in the UPS market known for high-performance devices that ensure a reliable power supply.',
-      'Our professional collaboration with these companies aligns with our project scope, enabling us to suggest and use the right products for the energy needs of our clients. Whether you need a single-phase UPS for lesser loads or a three-phase system for larger operations, we recommend the right product for you.',
-    ],
-  },
+  
   {
     no: '05',
     title: 'Data & Networking Works',

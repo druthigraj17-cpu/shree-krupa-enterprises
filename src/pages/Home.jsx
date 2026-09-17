@@ -121,8 +121,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Authorized Dealers For Luminous and Apar Wires"
-        description="Shree Krupa Enterprises is a  Authorized Dealers For electrical wires and cables, Luminous inverters, UPS systems and power backup solutions across India since 2012."
+        title="Authorized Distributor For Luminous and Apar Wires"
+        description="Shree Krupa Enterprises is a  Authorized Distributor For electrical wires and cables, Luminous inverters, UPS systems and power backup solutions across India since 2012."
         canonical="https://www.shreekrupaenterprise.in/"
         ogImage="https://www.shreekrupaenterprise.in/images/4.jpg"
         jsonLd={jsonLd}
@@ -133,7 +133,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-content">
             <span className="hero-eyebrow">Symbol of Excellence · Est. 2012 · Yelahanka, Bangalore</span>
-            <h1>Authorized Dealers For Luminous and Apar Wires</h1>
+            <h1>Authorized Distributor For Luminous and Apar Wires</h1>
             <div className="hero-cta">
               <Link to="/contact" className="btn btn-primary">Request a Quote</Link>
               <Link to="/services" className="btn btn-outline">Explore Our Services &rarr;</Link>
@@ -191,12 +191,67 @@ export default function Home() {
               <div className="about-inner">
                 <div className="split">
                   <div>
-                    <h3 style={{ fontSize: '1.3rem', color: 'var(--teal-800)', marginBottom: 12 }}>Shree Krupa Enterprises</h3>
-                    <p style={{ color: 'var(--muted)' }}>A Class-1 Licensed Electrical Contracting company that provides extensive services in the MEP (Mechanical, Electrical and Plumbing) segment. Our team believes in driving innovation and exceeding our clients' expectations across every touchpoint of the project lifecycle.</p>
-                    <p style={{ color: 'var(--muted)', marginTop: 10 }}>We supply APAR and KEI wires and cables, Luminous inverters and batteries, Eaton and Schneider UPS systems, and complete power backup solutions for homes, offices and industrial facilities across Bangalore and Karnataka.</p>
+                    <h3
+                      style={{
+                        fontSize: '1.3rem',
+                        color: 'var(--teal-800)',
+                        marginBottom: 16,
+                      }}
+                    >
+                      Shree Krupa Enterprises
+                    </h3>
+
+                    <p
+                      style={{
+                        color: 'var(--muted)',
+                        margin: '0 0 16px 0',
+                        lineHeight: '1.8',
+                        textAlign: 'left',
+                      }}
+                    >
+                      We are an <strong>Authorized Distributor of APAR Industries</strong>,
+                      specializing in <strong>E-Beam wires and cables</strong>. We are also
+                      distributors of <strong>Luminous inverters, batteries, solar power
+                        systems, and complete power backup solutions</strong> for residential,
+                      commercial, and institutional requirements.
+                    </p>
+
+                    <p
+                      style={{
+                        color: 'var(--muted)',
+                        margin: '0 0 16px 0',
+                        lineHeight: '1.8',
+                        textAlign: 'left',
+                      }}
+                    >
+                      As a trusted channel partner for leading electrical brands, we provide a
+                      comprehensive range of electrical products and solutions from{' '}
+                      <strong>
+                        Eaton, Schneider Electric, Havells, Microtek, ABB, Alfa
+                      </strong>{' '}
+                      and other reputed brands.
+                    </p>
+
+                    <p
+                      style={{
+                        color: 'var(--muted)',
+                        margin: '0 0 16px 0',
+                        lineHeight: '1.8',
+                        textAlign: 'left',
+                      }}
+                    >
+                      We are a <strong>Class-1 Licensed Electrical Contracting company</strong>{' '}
+                      that provides extensive services in the MEP (Mechanical, Electrical and
+                      Plumbing) segment. Our team believes in driving innovation and exceeding
+                      our clients' expectations across every touchpoint of the project lifecycle.
+                    </p>
+
+
                   </div>
                   <div>
                     <ul className="check-list">
+                      <li>UPS Sales (Eaton · Schneider · Luminous)</li>
+                      <li>Apar Wires and Cables</li>
                       <li>Internal &amp; External Electrification</li>
                       <li>Turnkey Project Management</li>
                       <li>Data &amp; Networking Works</li>
@@ -204,7 +259,6 @@ export default function Home() {
                       <li>HT Power Sanction &amp; HT Works</li>
                       <li>AMC &amp; Facility Management</li>
                       <li>Electrical Safety &amp; Energy Audits</li>
-                      <li>UPS Sales (Eaton · Schneider · Luminous)</li>
                     </ul>
                     <Link to="/about" className="btn btn-primary" style={{ marginTop: 6 }}>More About Us</Link>
                   </div>

@@ -16,10 +16,10 @@ export default function DirectorMessage() {
       <PageHero
         eyebrow="Leadership"
         title="Message From Our Directors"
-        lead="Two capable directors lead Shree Krupa Enterprises — one focused on business, the other on technical excellence."
+        lead="Our capable directors lead Shree Krupa Enterprises —  focused on business, and  technical excellence."
         crumb="Director Message"
         asideTitle="Board & leadership"
-        asideItems={['Lokesh Rai — Operations',  'Class-1 Licensed Contractor', 'Guided by quality & safety']}
+        asideItems={['Lokesh Rai — Operations',  'Authorized Distributor of Luminous and Apar Wires', 'Guided by quality & safety']}
       />
 
       <section className="section">
@@ -37,10 +37,10 @@ export default function DirectorMessage() {
                 <span className="eyebrow">Message From the Director</span>
                 <h2 style={{ color: 'var(--teal-800)', fontSize: '1.9rem' }}>Mr. Lokesh Rai</h2>
                 <div className="role">Director — Operations, Shree Krupa Enterprises</div>
-                <p style={{ color: 'var(--muted)' }}>Welcome to Shree Krupa Enterprises, where we are committed to giving the right value in the Authorized Dealers. Since our incorporation over a decade ago, we have maintained an excellent reputation for delivering high-quality projects that have exceeded the expectations of our clients.</p>
+                <p style={{ color: 'var(--muted)' }}>Welcome to Shree Krupa Enterprises, where we are committed to giving the right value in the Authorized Distributor. Since our incorporation over a decade ago, we have maintained an excellent reputation for delivering high-quality projects that have exceeded the expectations of our clients.</p>
                 <p style={{ color: 'var(--muted)', marginTop: 12 }}>Our core strengths of delivering quality and safety through our technical expertise and client-centric approaches are what set our team apart in the industry. This has guided our progression and led to the successful completion of our projects. We aim to keep developing our abilities according to technological advancements and utilizing their full potential to cater to the diverse MEP needs of our clients.</p>
                 <div className="quote"><p>I thank you for taking the time to understand our background and capabilities, and we are eager to manage all the requirements for the growth of your business.</p></div>
-                <div className="sign">Best wishes,<br />Lokesh Rai<br />Director, Shree Krupa Enterprises.</div>
+                <div className="sign">Best Regards,<br />Lokesh Rai<br />Proprietor, Shree Krupa Enterprises.</div>
               </div>
             </Reveal>
           </div>

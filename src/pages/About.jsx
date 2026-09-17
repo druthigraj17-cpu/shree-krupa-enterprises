@@ -6,6 +6,8 @@ import SEO from '../components/SEO.jsx';
 import { IMG } from '../data/site.js';
 
 const storyChecklist = [
+    'UPS sales — Eaton Powerware, Luminous/Schneider',
+    'Apar Wires & Cables — authorized distributor',
   'Internal & external electrification works',
   'Data & networking works',
   'ELV works — fire system, CCTV, PAVA, access control',
@@ -15,7 +17,6 @@ const storyChecklist = [
   'AMC services & facility management',
   'Electrical safety & energy audits',
   'Statutory approvals — CEIG, ESCOMS, Fire Office, KSPCB',
-  'UPS sales — Eaton Powerware, Luminous/Schneider',
 ];
 
 const pm = [
@@ -60,7 +61,7 @@ export default function About() {
           />
           <div className="intro-split">
             <Reveal>
-              <p style={{ color: 'var(--muted)', fontSize: '1.05rem' }}>Shree Krupa Enterprises is a <strong>Class-1 Licensed Electrical Contracting</strong> company that provides extensive services in the MEP (Mechanical, Electrical and Plumbing) segment for prominent companies in India.</p>
+              <p style={{ color: 'var(--muted)', fontSize: '1.05rem' }}>Shree Krupa Enterprises is a <strong>Authorized Distributor For Luminous and Apar Wires</strong>  </p>
               <p style={{ color: 'var(--muted)', marginTop: 14 }}>Incorporated in 2012 in Bangalore, our team believes in driving innovation and exceeding our clients' expectations — from design and detailed engineering to installation, testing and commissioning.</p>
               <div className="pill-row">
                 <span className="pill">MEP · Mechanical · Electrical · Plumbing</span>

@@ -12,15 +12,15 @@ const pageDescription = 'Shree Krupa Enterprises provides MEP electrical service
 const canonicalUrl = 'https://www.shreekrupaenterprise.in/services';
 
 const indexItems = [
-  '01 · Electrification & Turnkey Projects',
-  '02 · Design & Engineering',
-  '03 · Statutory Approvals',
-  '04 · Eaton & Schneider UPS',
-  '05 · Data & Networking',
-  '06 · Safety & Energy Audits',
-  '07 · ELV — Fire, CCTV, PAVA',
-  '08 · HT Power & AMC',
-  '09 · Interior Fit-Outs & More',
+  '01 · Luminous & Eaton UPS',
+  '02 · Apar Wires & Cables',
+  '03 · Electrification & Turnkey Projects',
+  '04 · Design & Engineering',
+  '05 · Statutory Approvals',
+  '06 · Data & Networking',
+  '07 · Safety & Energy Audits',
+  '08 · ELV — Fire, CCTV, PAVA',
+  '09 · HT Power & AMC',
 ];
 
 const serviceFaqs = [
@@ -100,7 +100,7 @@ export default function Services() {
 
       <section className="section">
         <div className="container">
-          <SectionHead eyebrow="MEP Solutions" title="Specialized services, tailored delivery" lead="Thirteen capability areas, one accountable partner — scroll through the services you need." />
+          <SectionHead eyebrow="MEP Solutions" title="Specialized services, tailored delivery" />
           {services.map((s, i) => (
             <div className="service-feature" key={i}>
               <div className="sf-img"><img src={IMG[s.image]} alt={s.alt} loading="lazy" /></div>
