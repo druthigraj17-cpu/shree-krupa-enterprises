@@ -3,7 +3,6 @@ export const SITE = {
   legal: 'Shree Krupa Enterprises',
   phone1: '+91-81479-76125',
   phone1Tel: '+918147976125',
-  phone2: '+91-97405-76125',
   phone2Tel: '+919740576125',
   email: 'shreekripaenterprises.blr@gmail.com',
   web: 'www.shreekrupaenterprise.in',
