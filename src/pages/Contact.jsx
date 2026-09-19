@@ -34,7 +34,7 @@ const jsonLd = {
     {
       "@type": "LocalBusiness",
       "name": "Shree Krupa Enterprises",
-      "description": "Authorized APAR wires dealer and Luminous battery supplier in Bangalore. Class-1 MEP electrical contractor.",
+      "description": "Authorized APAR wires dealer and Luminous battery supplier in Bangalore. Licensed electrical contractor.",
       "url": "https://www.shreekrupaenterprise.in",
       "telephone": SITE.phone1,
       "email": SITE.email,

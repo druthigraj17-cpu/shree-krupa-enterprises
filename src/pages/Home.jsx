@@ -20,11 +20,13 @@ const tileImages = ['electrification', 'design', 'statutory', 'elv', 'ht', 'ups'
 const homeFaqs = [
   { q: 'What services does Shree Krupa Enterprises provide?', a: 'We provide comprehensive MEP services including internal and external electrification, design and engineering, statutory approvals (CEIG, ESCOMS, Fire Office, KSPCB), ELV works, HT power, AMC, energy audits and interior fit-outs.' },
   { q: 'Where is Shree Krupa Enterprises located?', a: 'We are based in Yelahanka, Bangalore, Karnataka. Our office is at #35, 1st Floor, 8th Main, Anantapur, Yelahanka, Bangalore - 560064.' },
-  { q: 'Is Shree Krupa Enterprises an authorized APAR dealer in Bangalore?', a: 'Yes. Shree Krupa Enterprises is an authorized distributor and dealer for APAR wires and cables in Bangalore. We supply APAR house wiring cables, power cables, control cables and industrial cabling across Bangalore and Karnataka.' },
-  { q: 'Does Shree Krupa Enterprises sell Luminous batteries in Bangalore?', a: 'Yes. We are an authorized channel partner for Luminous/Schneider UPS systems and supply Luminous inverters, batteries and solar panels across Bangalore. Contact us for Luminous battery prices and installation.' },
-  { q: 'What areas does Shree Krupa Enterprises serve?', a: 'We serve industrial and commercial companies across India, with our base in Yelahanka, Bangalore, Karnataka.' },
-  { q: 'Does Shree Krupa handle commercial and industrial electrical works?', a: 'Yes. We handle turnkey electrification projects for commercial and industrial facilities — from design and installation to testing and commissioning, compliant with CEIG, NBC and IS/IEC codes.' },
-  { q: 'What electrical products does Shree Krupa supply?', a: 'We supply APAR and KEI wires and cables, Luminous inverters, Eaton and Schneider/Luminous UPS systems, inverter batteries, pumps, fans, lighting and solar water heaters.' },
+  { q: 'Is Shree Krupa Enterprises an authorized APAR dealer in Bangalore?', a: 'Yes. Shree Krupa Enterprises is an authorized APAR distributor and dealer in Bangalore. We supply the full range of APAR wires and cables — house wiring, E-Beam, power cables, control cables and industrial cabling across Bangalore and Karnataka. Contact us for APAR wire prices.' },
+  { q: 'Where is the APAR office in Bangalore?', a: 'The APAR authorized office in Bangalore is at Shree Krupa Enterprises, #35, 1st Floor, 8th Main, Anantapur, Yelahanka, Bangalore - 560064. Visit us for APAR wire samples, prices and bulk orders.' },
+  { q: 'What is the APAR wire price in Bangalore?', a: 'APAR wire prices vary based on cable type, gauge and quantity. Contact us at ' + SITE.phone1 + ' or visit our APAR office in Yelahanka, Bangalore for the latest APAR wire price list and bulk order discounts.' },
+  { q: 'Does Shree Krupa Enterprises sell Luminous batteries in Bangalore?', a: 'Yes. We are an authorized Luminous dealer in Bangalore supplying Luminous inverters, batteries, solar panels and Luminous/Schneider UPS systems. Get Luminous battery prices at our Yelahanka office.' },
+  { q: 'What is the Luminous battery price in Bangalore?', a: 'Luminous battery prices depend on battery type, capacity and model. Contact us at ' + SITE.phone1 + ' or visit our office in Yelahanka, Bangalore for the latest Luminous inverter battery prices and available offers.' },
+  { q: 'Where can I buy Luminous batteries in Bangalore?', a: 'You can buy Luminous inverter batteries at our office in Yelahanka, Bangalore or call us for home delivery. We stock the complete range of Luminous tubular and flat-plate batteries.' },
+  { q: 'What electrical products does Shree Krupa supply?', a: 'We supply APAR and KEI wires and cables, Luminous inverters, batteries and solar panels, Eaton and Schneider/Luminous UPS systems, pumps, fans, lighting and solar water heaters.' },
   { q: 'How can I contact Shree Krupa for an electrical project?', a: 'You can call us at ' + SITE.phone1 + ', email ' + SITE.email + ' or visit our office in Yelahanka, Bangalore. Share your requirements and our team will provide a quotation.' },
 ];
 
@@ -36,7 +38,7 @@ const jsonLd = {
       "@id": "https://www.shreekrupaenterprise.in/#organization",
       "name": "Shree Krupa Enterprises",
       "url": "https://www.shreekrupaenterprise.in",
-      "description": "Class-1 Licensed Electrical Contracting company and authorized APAR & Luminous dealer delivering comprehensive MEP solutions across India since 2012.",
+      "description": "Licensed Electrical Contracting company and authorized APAR & Luminous dealer delivering comprehensive MEP solutions across India since 2012.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "#35, 1st Floor, 8th Main, Anantapur, Yelahanka",
@@ -60,7 +62,7 @@ const jsonLd = {
       "name": "Shree Krupa Enterprises — APAR Dealer & Luminous Battery Supplier in Bangalore",
       "parentOrganization": { "@id": "https://www.shreekrupaenterprise.in/#organization" },
       "url": "https://www.shreekrupaenterprise.in",
-      "description": "Authorized APAR wires & cables dealer and Luminous batteries, inverters & UPS distributor in Bangalore. Class-1 MEP electrical contractor since 2012.",
+      "description": "Authorized APAR wires & cables dealer and Luminous batteries, inverters & UPS distributor in Bangalore since 2012.",
       "image": "https://www.shreekrupaenterprise.in/images/4.jpg",
       "telephone": SITE.phone1,
       "email": SITE.email,
@@ -130,7 +132,7 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://www.shreekrupaenterprise.in/#webpage",
       "name": "APAR Wires & Cables, Luminous Batteries & UPS — Shree Krupa Enterprises Bangalore",
-      "description": "Authorized APAR wires & cables dealer and Luminous batteries, inverters & UPS distributor in Bangalore. Class-1 MEP electrical contractor since 2012.",
+      "description": "Authorized APAR wires & cables dealer and Luminous batteries, inverters & UPS distributor in Bangalore since 2012.",
       "url": "https://www.shreekrupaenterprise.in",
       "isPartOf": { "@id": "https://www.shreekrupaenterprise.in/#website" },
       "about": { "@id": "https://www.shreekrupaenterprise.in/#organization" },
@@ -160,7 +162,7 @@ export default function Home() {
   const heroImages = [
     { src: '/images/backgoround_image_1.jpeg', alt: 'Shree Krupa Enterprises electrical services in Bangalore' },
     { src: '/images/backgoround_image_2.jpeg', alt: 'APAR wires and Luminous batteries dealer Yelahanka' },
-    { src: '/images/backgoround_image_3.jpg', alt: 'MEP electrical contractor office Bangalore' },
+    { src: '/images/backgoround_image_3.jpg', alt: 'Electrical contractor office Bangalore' },
     { src: '/images/backgoround_image_4.jpg', alt: 'Luminous inverters and UPS systems supplier' },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -180,7 +182,7 @@ export default function Home() {
         ogImage="https://www.shreekrupaenterprise.in/images/4.jpg"
         ogType="website"
         jsonLd={jsonLd}
-        keywords="APAR office in Bangalore, APAR wires dealer Bangalore, APAR cables Bangalore, Luminous batteries, Luminous inverter Bangalore, Luminous battery price, electrical contractor Bangalore, MEP contractor Bangalore, Yelahanka electrical contractor, APAR E-Beam wires, Eaton UPS Bangalore, Schneider UPS Bangalore"
+        keywords="APAR office in Bangalore, APAR wires dealer Bangalore, APAR cables Bangalore, APAR wire price, Luminous batteries, Luminous battery price, Luminous inverter Bangalore, Luminous inverter battery, electrical contractor Bangalore, Yelahanka electrical contractor, APAR E-Beam wires, Eaton UPS Bangalore, Schneider UPS Bangalore"
       />
 
       {/* HERO */}

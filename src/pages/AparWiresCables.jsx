@@ -211,11 +211,11 @@ export default function AparWiresCables() {
           <SectionHead
             eyebrow="Why Shree Krupa"
             title="Your authorized APAR dealer in Bangalore"
-            lead="We are a Class-1 Licensed Electrical Contractor and authorized APAR office in Yelahanka, Bangalore. We supply APAR wires and cables alongside our full range of MEP services."
+            lead="We are a Licensed Electrical Contractor and authorized APAR office in Yelahanka, Bangalore. We supply APAR wires and cables alongside our full range of MEP services."
           />
           <div className="check-list" style={{ maxWidth: 700 }}>
             <li>Authorized APAR dealer and distributor in Bangalore</li>
-            <li>Class-1 Licensed Electrical Contractor since 2012</li>
+            <li>Licensed Electrical Contractor since 2012</li>
             <li>APAR office located in Yelahanka, serving Bangalore and Karnataka</li>
             <li>Full range of APAR E-Beam, power and control cables</li>
             <li>Competitive APAR wire prices for bulk and retail orders</li>

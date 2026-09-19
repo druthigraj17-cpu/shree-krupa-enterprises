@@ -31,7 +31,7 @@ export const productBrands = [
 ];
 
 export const faqs = [
-  { q: 'Are you a licensed electrical contractor?', a: 'Yes. Shree Krupa Enterprises is a Class-1 Licensed Electrical Contracting company incorporated in Bangalore in 2012.' },
+  { q: 'Are you a licensed electrical contractor?', a: 'Yes. Shree Krupa Enterprises is a Licensed Electrical Contracting company incorporated in Bangalore in 2012.' },
   { q: 'Which regions do you serve?', a: 'We serve prominent industrial and commercial companies across India, with our base in Bangalore, Karnataka.' },
   { q: 'Do you handle statutory approvals for projects?', a: 'Yes. We help clients obtain approvals from CEIG, ESCOMS, Fire Office, KSPCB and other regulatory bodies, preparing designs per NBC and IS codes.' },
   { q: 'Which UPS brands do you supply?', a: 'We are authorized channel partners for Eaton Powerware and Luminous/Schneider UPS systems.' },

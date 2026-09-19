@@ -66,7 +66,7 @@ export default function Clients() {
         <div className="container">
           <span className="eyebrow">Become Our Next Success Story</span>
           <h2>Join India's Leading Enterprises</h2>
-          <p>Partner with a Class-1 licensed MEP contractor committed to quality, safety and on-time delivery.</p>
+          <p>Partner with a licensed MEP contractor committed to quality, safety and on-time delivery.</p>
           <Link to="/contact" className="btn btn-primary">Get in Touch</Link>
         </div>
       </section>

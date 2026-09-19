@@ -73,7 +73,7 @@ export default function DirectorMessage() {
           <SectionHead eyebrow="Who We Are" title="Organizational chart" lead="A lean structure that pairs strong commercial leadership with deep technical delivery." />
           <div className="org-chart" style={{ marginTop: 20 }}>
             <Reveal>
-              <div className="org-node board"><h4>SHREE KRUPA ENTERPRISES</h4><span>Class-1 Licensed Electrical Contractor</span></div>
+              <div className="org-node board"><h4>SHREE KRUPA ENTERPRISES</h4><span>Licensed Electrical Contractor</span></div>
             </Reveal>
             <Reveal><div className="org-connector">&#8595;</div></Reveal>
             <div className="org-rows">

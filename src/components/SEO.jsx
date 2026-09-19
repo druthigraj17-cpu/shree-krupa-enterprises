@@ -1,12 +1,12 @@
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 
-const defaultKeywords = 'APAR office in Bangalore, APAR wires dealer Bangalore, APAR cables, Luminous batteries, Luminous inverter, Luminous UPS dealer, electrical contractor Bangalore, MEP contractor Bangalore, electrical products Bangalore, Eaton UPS, Schneider UPS, Yelahanka electrical contractor';
+const defaultKeywords = 'APAR office in Bangalore, APAR wires dealer Bangalore, APAR cables, Luminous batteries, Luminous battery price, Luminous inverter, Luminous inverter battery, Luminous UPS dealer, electrical contractor Bangalore, electrical products Bangalore, Eaton UPS, Schneider UPS, Yelahanka electrical contractor';
 
 export default function SEO({ title, description, canonical, ogImage, jsonLd, robots, keywords, ogType }) {
   const location = useLocation();
   const t = title ? `${title} | Shree Krupa Enterprises` : 'Shree Krupa Enterprises | APAR Wires, Luminous Batteries & MEP Electrical Contractor Bangalore';
-  const d = description || 'Shree Krupa Enterprises is an authorized APAR wires & cables dealer and Luminous batteries, inverters & UPS distributor in Bangalore. Class-1 Licensed MEP electrical contractor since 2012.';
+  const d = description || 'Shree Krupa Enterprises is an authorized APAR wires & cables dealer and Luminous batteries, inverters & UPS distributor in Bangalore since 2012.';
   const robotsContent = robots || 'index, follow';
   const canonicalUrl = canonical || `https://www.shreekrupaenterprise.in${location.pathname}`;
   const kw = keywords || defaultKeywords;

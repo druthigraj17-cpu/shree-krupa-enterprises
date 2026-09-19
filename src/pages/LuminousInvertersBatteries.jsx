@@ -227,11 +227,11 @@ export default function LuminousInvertersBatteries() {
           <SectionHead
             eyebrow="Why Shree Krupa"
             title="Your authorized Luminous dealer in Bangalore"
-            lead="We are a Class-1 Licensed Electrical Contractor and authorized Luminous dealer in Yelahanka, Bangalore. We supply Luminous inverters, UPS systems and batteries alongside our full range of MEP services."
+            lead="We are a Licensed Electrical Contractor and authorized Luminous dealer in Yelahanka, Bangalore. We supply Luminous inverters, UPS systems and batteries alongside our full range of MEP services."
           />
           <div className="check-list" style={{ maxWidth: 700 }}>
             <li>Authorized Luminous dealer and distributor in Bangalore</li>
-            <li>Class-1 Licensed Electrical Contractor since 2012</li>
+            <li>Licensed Electrical Contractor since 2012</li>
             <li>Luminous dealer office in Yelahanka, serving Bangalore and Karnataka</li>
             <li>Full range of Luminous inverters, batteries, UPS and solar panels</li>
             <li>Competitive Luminous battery prices for homes and businesses</li>

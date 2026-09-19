@@ -7,7 +7,7 @@ import SEO from '../components/SEO.jsx';
 import { IMG, SITE } from '../data/site.js';
 import { services, processSteps } from '../data/services.js';
 
-const pageTitle = 'MEP Electrical Services in Bangalore — Class-1 Contractor | Shree Krupa Enterprises';
+const pageTitle = 'MEP Electrical Services in Bangalore — Licensed Contractor | Shree Krupa Enterprises';
 const pageDescription = 'Shree Krupa Enterprises provides MEP electrical services in Bangalore including electrification, HT works, ELV, UPS, AMC, testing and commissioning. Authorized APAR & Luminous dealer.';
 const canonicalUrl = 'https://www.shreekrupaenterprise.in/services';
 
@@ -25,7 +25,7 @@ const indexItems = [
 const serviceFaqs = [
   { q: 'What does an MEP electrical contractor do?', a: 'An MEP electrical contractor handles the mechanical, electrical and plumbing aspects of building construction and renovation — including design, installation, testing and commissioning of electrical systems.' },
   { q: 'What MEP services does Shree Krupa Enterprises provide?', a: 'We provide comprehensive MEP services including internal and external electrification, design and engineering, statutory approvals (CEIG, ESCOMS, Fire Office, KSPCB), ELV works, HT power, AMC, energy audits and interior fit-outs.' },
-  { q: 'Is Shree Krupa Enterprises a Class-1 electrical contractor?', a: 'Yes. Shree Krupa Enterprises is a Class-1 Licensed Electrical Contracting company incorporated in Bangalore in 2012. We are also authorized APAR and Luminous dealers.' },
+  { q: 'Is Shree Krupa Enterprises a licensed electrical contractor?', a: 'Yes. Shree Krupa Enterprises is a Licensed Electrical Contracting company incorporated in Bangalore in 2012. We are also authorized APAR and Luminous dealers.' },
   { q: 'Does Shree Krupa handle HT and ELV electrical works?', a: 'Yes. We handle HT power sanctioning and HT works, as well as ELV systems including fire alarm, CCTV, PAVA and access control across Bangalore.' },
   { q: 'What is included in turnkey electrification?', a: 'Our turnkey electrification covers all phases of the project lifecycle — from planning and design of the electrical infrastructure to installation, testing and commissioning, compliant with CEIG, NBC and IS/IEC codes.' },
   { q: 'Does Shree Krupa handle statutory approvals?', a: 'Yes. We provide complete assistance for safety clearances from CEIG, ESCOMS, Fire Office and KSPCB, including document preparation, submission and follow-up.' },
@@ -87,13 +87,13 @@ export default function Services() {
         ogImage={IMG.electrification}
         ogType="website"
         jsonLd={jsonLd}
-        keywords="MEP electrical services Bangalore, electrical contractor Bangalore, Class-1 electrical contractor, APAR wires dealer, Luminous battery supplier, HT power works, ELV systems, AMC services, Yelahanka electrical contractor"
+        keywords="MEP electrical services Bangalore, electrical contractor Bangalore, APAR wires dealer, Luminous battery supplier, HT power works, ELV systems, AMC services, Yelahanka electrical contractor, APAR cables, Luminous inverter"
       />
 
       <PageHero
         eyebrow="What We Offer"
         title="MEP Electrical Services in Bangalore"
-        lead="A diverse selection of specialized MEP services, tailored to the different specifications of our clients. Class-1 licensed electrical contractor and authorized APAR & Luminous dealer based in Yelahanka, serving Bangalore and Karnataka."
+        lead="A diverse selection of specialized MEP services, tailored to the different specifications of our clients. Licensed electrical contractor and authorized APAR & Luminous dealer based in Yelahanka, serving Bangalore and Karnataka."
         crumb="Services"
         asideTitle="Service index"
         asideItems={indexItems}
