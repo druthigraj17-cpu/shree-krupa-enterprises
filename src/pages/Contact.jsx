@@ -126,30 +126,32 @@ export default function Contact() {
               </div>
             </div>
             <div>
-              <form className="form" onSubmit={(e) => {
+              <form className="form" action={`https://formsubmit.co/${SITE.email}`} method="POST" onSubmit={async (e) => {
                 e.preventDefault();
                 const form = e.target;
-                const name = form.name.value;
-                const phone = form.phone.value;
-                const email = form.email.value;
-                const service = form.service.value;
-                const message = form.message.value;
-                const waNumber = '918147976125';
-                const text = encodeURIComponent(
-                  `*New Enquiry from Website*%0A%0A` +
-                  `*Name:* ${name}%0A` +
-                  `*Phone:* ${phone}%0A` +
-                  `*Email:* ${email}%0A` +
-                  (service ? `*Service/Product:* ${service}%0A` : '') +
-                  `*Message:* ${message}`
-                );
-                window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank');
-                setSent(true);
-                form.reset();
+                const formData = new FormData(form);
+                formData.append('_subject', 'New Enquiry from Shree Krupa Website');
+                formData.append('_captcha', 'false');
+                formData.append('_template', 'table');
+                try {
+                  const res = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                  });
+                  if (res.ok) {
+                    setSent(true);
+                    form.reset();
+                  } else {
+                    alert('Something went wrong. Please try again or call us directly.');
+                  }
+                } catch {
+                  alert('Something went wrong. Please try again or call us directly.');
+                }
               }}>
                 <h3 style={{ color: 'var(--primary)', marginBottom: 6 }}>Send Us an Enquiry</h3>
                 <p style={{ color: 'var(--muted)', fontSize: '.9rem', marginBottom: 18 }}>Fill in the form for APAR wires, Luminous batteries or MEP services — we'll respond within 24 hours.</p>
-                {sent && <div className="form-success" style={{ display: 'block' }}>Thank you! Opening WhatsApp... If it didn't open, <a href="https://wa.me/918147976125" target="_blank" rel="noopener noreferrer">click here</a>.</div>}
+                {sent && <div className="form-success" style={{ display: 'block' }}>Thank you! Your enquiry has been sent. Our team will contact you within 24 hours. You can also <a href="https://wa.me/918147976125" target="_blank" rel="noopener noreferrer">WhatsApp us directly</a>.</div>}
                 <div className="form-row">
                   <div className="form-group"><label>Name*</label><input type="text" name="name" required maxLength="80" /></div>
                   <div className="form-group"><label>Phone*</label><input type="tel" name="phone" required pattern="[0-9+\-\s]{7,15}" /></div>
