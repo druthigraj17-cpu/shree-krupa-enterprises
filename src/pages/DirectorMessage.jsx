@@ -27,7 +27,7 @@ export default function DirectorMessage() {
           <div className="intro-split" style={{ alignItems: 'start' }}>
             <Reveal>
               <div className="director" style={{ gridTemplateColumns: '1fr' }}>
-                <div className="director-avatar" style={{ width: '100%', maxWidth: 320, height: 260, margin: '0 auto', overflow: 'hidden', borderRadius: 16 }}>
+                <div className="director-avatar" style={{ width: '100%', maxWidth: 320, height: 330, margin: '0 auto', overflow: 'hidden', borderRadius: 16 }}>
                   <img src={IMG.n11} alt="Lokesh Rai - Director" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
                 </div>
               </div>
