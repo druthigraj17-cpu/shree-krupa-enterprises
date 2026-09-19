@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import Floating from './Floating.jsx';
-import QuotePopup from './QuotePopup.jsx';
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -20,7 +19,6 @@ export default function Layout() {
       </main>
       <Footer />
       <Floating />
-      <QuotePopup />
     </>
   );
 }
