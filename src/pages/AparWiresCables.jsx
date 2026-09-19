@@ -6,7 +6,7 @@ import FaqAccordion from '../components/FaqAccordion.jsx';
 import SEO from '../components/SEO.jsx';
 import { IMG, SITE } from '../data/site.js';
 
-const pageTitle = 'APAR Office in Bangalore — Authorized APAR Wires & Cables Dealer';
+const pageTitle = 'Authorized APAR Wires & Cables Dealer';
 const pageDescription = 'Shree Krupa Enterprises is an authorized APAR office in Bangalore supplying APAR wires and cables for house wiring, industrial cabling and power distribution. Get APAR wire prices in Yelahanka, Bangalore.';
 const canonicalUrl = 'https://www.shreekrupaenterprise.in/products/apar-wires-cables';
 

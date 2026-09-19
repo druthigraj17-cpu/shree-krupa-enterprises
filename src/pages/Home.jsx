@@ -176,7 +176,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="APAR Office in Bangalore — Authorized APAR Dealer & Luminous Battery Supplier"
+        title="Authorized APAR Dealer & Luminous Battery Supplier"
         description="Shree Krupa Enterprises is an authorized APAR wires & cables office in Bangalore and Luminous batteries, inverters & UPS distributor. Get APAR wire prices and Luminous battery quotes in Yelahanka, Bangalore."
         canonical="https://www.shreekrupaenterprise.in/"
         ogImage="https://www.shreekrupaenterprise.in/images/4.jpg"
@@ -190,7 +190,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-content">
             <span className="hero-eyebrow">Authorized APAR & Luminous Dealer · Est. 2012 · Yelahanka, Bangalore</span>
-            <h1>APAR Office in Bangalore — Authorized APAR Dealer & Luminous Battery Supplier</h1>
+            <h1>Authorized APAR Dealer & Luminous Battery Supplier</h1>
             <div className="hero-cta">
               <Link to="/contact" className="btn btn-primary">Request a Quote</Link>
               <Link to="/products" className="btn btn-outline">View Products &rarr;</Link>
