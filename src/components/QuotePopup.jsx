@@ -22,13 +22,31 @@ export default function QuotePopup() {
       <div className="popup">
         <button className="popup-close" aria-label="Close" onClick={() => setShow(false)}>&times;</button>
         {sent ? (
-          <div className="form-success" style={{ display: 'block' }}>Thank you! Your enquiry has been received. Our team will contact you within 24 hours.</div>
+          <div className="form-success" style={{ display: 'block' }}>Thank you! Opening WhatsApp... If it didn't open, <a href="https://wa.me/918147976125" target="_blank" rel="noopener noreferrer">click here</a>.</div>
         ) : (
           <>
             <h3>Get a Free Quote</h3>
             <p>Tell us about your project and we'll get back within 24 hours.</p>
             <form
-              onSubmit={(e) => { e.preventDefault(); setSent(true); e.target.reset(); }}
+              onSubmit={(e) => {
+                e.preventDefault();
+                const form = e.target;
+                const name = form.name.value;
+                const phone = form.phone.value;
+                const email = form.email.value;
+                const message = form.message.value;
+                const waNumber = '918147976125';
+                const text = encodeURIComponent(
+                  `*New Quote Request from Website*%0A%0A` +
+                  `*Name:* ${name}%0A` +
+                  `*Phone:* ${phone}%0A` +
+                  `*Email:* ${email}%0A` +
+                  `*Requirement:* ${message}`
+                );
+                window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank');
+                setSent(true);
+                form.reset();
+              }}
             >
               <div className="form-group"><input type="text" name="name" placeholder="Your Name" required maxLength="80" /></div>
               <div className="form-group"><input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9+\-\s]{7,15}" /></div>
