@@ -190,8 +190,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-content">
             <span className="hero-eyebrow">Authorized APAR & Luminous Dealer · Est. 2012 · Yelahanka, Bangalore</span>
-            <h1>Authorized APAR  & Luminous Battery and Inverter Distributor</h1>
-            <div className="hero-cta">
+<h1>Authorized Distributor of APAR Wires & Cables and Luminous Batteries & Inverters</h1>            <div className="hero-cta">
               <Link to="/contact" className="btn btn-primary">Request a Quote</Link>
               <Link to="/products" className="btn btn-outline">View Products &rarr;</Link>
             </div>
