@@ -6,71 +6,102 @@ import FaqAccordion from '../components/FaqAccordion.jsx';
 import SEO from '../components/SEO.jsx';
 import { IMG, SITE } from '../data/site.js';
 
-const pageTitle = 'Luminous Inverters & Batteries in Bangalore | Shree Krupa Enterprises';
-const pageDescription = 'Shree Krupa Enterprises supplies Luminous inverters, UPS systems and power backup solutions for homes, offices and commercial facilities across Bangalore. Class-1 electrical contractor since 2012.';
+const pageTitle = 'Luminous Batteries & Inverters in Bangalore — Authorized Dealer';
+const pageDescription = 'Shree Krupa Enterprises is an authorized Luminous dealer in Bangalore supplying Luminous batteries, inverters, UPS systems and solar panels. Get Luminous battery prices in Yelahanka, Bangalore.';
 const canonicalUrl = 'https://www.shreekrupaenterprise.in/products/luminous-inverters-batteries';
 
 const faqs = [
   {
+    q: 'Is Shree Krupa Enterprises an authorized Luminous dealer in Bangalore?',
+    a: 'Yes. Shree Krupa Enterprises is an authorized channel partner for Luminous/Schneider UPS systems and supplies Luminous inverters, batteries and solar panels across Bangalore and Karnataka.',
+  },
+  {
+    q: 'What is the Luminous battery price in Bangalore?',
+    a: 'Luminous battery prices vary based on battery type, capacity and model. Contact us at ' + SITE.phone1 + ' or visit our office in Yelahanka, Bangalore for the latest Luminous battery prices and available offers.',
+  },
+  {
     q: 'What Luminous products does Shree Krupa Enterprises supply?',
-    a: 'We supply Luminous inverters, Luminous/Schneider UPS systems and solar panels. Our team can help you choose the right power backup solution for your home, office or commercial facility.',
+    a: 'We supply the full Luminous range including inverters, Luminous/Schneider UPS systems, inverter batteries, solar panels and solar inverters. Our team helps you choose the right power backup solution for your home, office or commercial facility.',
   },
   {
     q: 'Which Luminous inverter is suitable for home power backup?',
-    a: 'Luminous offers single-phase inverters suitable for apartments and villas, keeping lights, fans, refrigerators and Wi-Fi running during outages. Contact us with your load requirements for a recommendation.',
+    a: 'Luminous offers single-phase inverters suitable for apartments and villas, keeping lights, fans, refrigerators and Wi-Fi running during outages. Contact us for Luminous inverter prices and load-based recommendations.',
   },
   {
     q: 'What is the difference between an inverter and a UPS?',
     a: 'An inverter converts DC battery power to AC for your appliances with a slight delay. A UPS provides instant switchover with no delay — critical for computers, servers and sensitive electronics.',
   },
   {
-    q: 'Is Shree Krupa Enterprises an authorized partner for Luminous?',
-    a: 'Yes. We are an authorized channel partner for Luminous/Schneider UPS systems. We also supply Luminous inverters and solar panels for residential and commercial power backup needs.',
-  },
-  {
     q: 'Do you provide installation support for Luminous inverters and UPS?',
-    a: 'Yes. We provide complete installation, testing and commissioning for Luminous UPS and inverter systems. We also offer Annual Maintenance Contracts (AMC) for ongoing support.',
+    a: 'Yes. We provide complete installation, testing and commissioning for Luminous UPS and inverter systems. We also offer Annual Maintenance Contracts (AMC) for ongoing support in Bangalore.',
   },
   {
-    q: 'Do you supply inverter batteries as well?',
-    a: 'Yes. We supply inverter batteries and can recommend the right battery type and capacity to pair with your Luminous inverter or UPS system.',
+    q: 'Do you supply Luminous inverter batteries as well?',
+    a: 'Yes. We supply Luminous inverter batteries and can recommend the right battery type and capacity to pair with your Luminous inverter or UPS system. Get Luminous battery prices at our Bangalore office.',
+  },
+  {
+    q: 'Where can I buy Luminous batteries in Bangalore?',
+    a: 'You can buy Luminous batteries at our office in Yelahanka, Bangalore or call us at ' + SITE.phone1 + ' for home delivery. We stock the full range of Luminous inverter batteries.',
   },
   {
     q: 'How do I request a quote for a Luminous inverter or UPS?',
-    a: 'You can call us at ' + SITE.phone1 + ', email ' + SITE.email + ' or visit our office in Yelahanka, Bangalore. Share your power backup requirements and we will provide a quotation.',
+    a: 'You can call us at ' + SITE.phone1 + ', email ' + SITE.email + ' or visit our office in Yelahanka, Bangalore. Share your power backup requirements and we will provide a quotation with Luminous battery prices.',
   },
 ];
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": pageTitle,
-  "description": pageDescription,
-  "url": canonicalUrl,
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "Shree Krupa Enterprises",
-    "url": "https://www.shreekrupaenterprise.in"
-  },
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shreekrupaenterprise.in/" },
-      { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.shreekrupaenterprise.in/products" },
-      { "@type": "ListItem", "position": 3, "name": "Luminous Inverters & Batteries", "item": canonicalUrl }
-    ]
-  },
-  "mainEntity": {
-    "@type": "ItemList",
-    "name": "Luminous Inverters, UPS & Batteries",
-    "description": "Luminous power backup products supplied by Shree Krupa Enterprises in Bangalore",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Luminous Inverters" },
-      { "@type": "ListItem", "position": 2, "name": "Luminous/Schneider UPS Systems" },
-      { "@type": "ListItem", "position": 3, "name": "Inverter Batteries" },
-      { "@type": "ListItem", "position": 4, "name": "Luminous Solar Panels" }
-    ]
-  }
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "name": pageTitle,
+      "description": pageDescription,
+      "url": canonicalUrl,
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Shree Krupa Enterprises",
+        "url": "https://www.shreekrupaenterprise.in"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shreekrupaenterprise.in/" },
+          { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.shreekrupaenterprise.in/products" },
+          { "@type": "ListItem", "position": 3, "name": "Luminous Inverters & Batteries", "item": canonicalUrl }
+        ]
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Luminous Batteries, Inverters & UPS — Authorized Dealer in Bangalore",
+        "description": "Luminous power backup products supplied by Shree Krupa Enterprises, an authorized Luminous dealer in Bangalore",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Luminous Inverters" },
+          { "@type": "ListItem", "position": 2, "name": "Luminous Batteries" },
+          { "@type": "ListItem", "position": 3, "name": "Luminous/Schneider UPS Systems" },
+          { "@type": "ListItem", "position": 4, "name": "Luminous Solar Panels" }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.a
+        }
+      }))
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shreekrupaenterprise.in/" },
+        { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.shreekrupaenterprise.in/products" },
+        { "@type": "ListItem", "position": 3, "name": "Luminous Inverters & Batteries", "item": canonicalUrl }
+      ]
+    }
+  ]
 };
 
 export default function LuminousInvertersBatteries() {
@@ -81,21 +112,23 @@ export default function LuminousInvertersBatteries() {
         description={pageDescription}
         canonical={canonicalUrl}
         ogImage={IMG.luminous}
+        ogType="product"
         jsonLd={jsonLd}
+        keywords="Luminous batteries, Luminous battery price, Luminous inverter Bangalore, Luminous dealer Bangalore, Luminous UPS, Luminous solar panels, inverter battery price, Luminous inverter battery, home inverter Bangalore, power backup solutions Bangalore"
       />
 
       <PageHero
-        eyebrow="Power Backup Solutions"
-        title="Luminous Inverters & Batteries in Bangalore"
-        lead="Shree Krupa Enterprises supplies Luminous inverters, UPS systems and power backup solutions for homes, offices and commercial facilities across Bangalore. Authorized channel partner for Luminous/Schneider UPS."
+        eyebrow="Authorized Luminous Dealer in Bangalore"
+        title="Luminous Batteries, Inverters & UPS in Bangalore"
+        lead="Shree Krupa Enterprises is an authorized Luminous dealer in Bangalore supplying Luminous batteries, inverters, UPS systems and solar panels for homes, offices and commercial facilities. Get Luminous battery prices in Yelahanka, Bangalore."
         crumb="Luminous Inverters & Batteries"
-        asideTitle="Product range"
+        asideTitle="Luminous Product Range"
         asideItems={[
-          'Luminous inverters',
+          'Luminous Inverters',
+          'Luminous Batteries',
           'Luminous/Schneider UPS',
-          'Inverter batteries',
-          'Solar panels',
-          'AMC & support',
+          'Solar Panels',
+          'AMC & Installation Support',
         ]}
       />
 
@@ -103,21 +136,22 @@ export default function LuminousInvertersBatteries() {
         <div className="container">
           <SectionHead
             eyebrow="About Luminous"
-            title="India's trusted power backup brand"
-            lead="Luminous Power Technologies is one of India's largest manufacturers of inverters, UPS systems and batteries. Shree Krupa Enterprises supplies Luminous products across Bangalore and Karnataka, backed by professional installation and after-sales support."
+            title="India's most trusted power backup brand"
+            lead="Luminous Power Technologies is one of India's largest manufacturers of inverters, UPS systems and batteries. Shree Krupa Enterprises is an authorized Luminous dealer in Bangalore, supplying the full Luminous range across Bangalore and Karnataka."
           />
           <div className="intro-split">
             <Reveal>
-              <p style={{ color: 'var(--muted)' }}>Power cuts are a reality across many parts of Bangalore and Karnataka. A reliable inverter or UPS system keeps your home, office or business running without disruption. Luminous has been a household name in Indian power backup for decades, offering a wide range of inverters, batteries and solar solutions.</p>
-              <p style={{ color: 'var(--muted)', marginTop: 12 }}>At Shree Krupa Enterprises, we supply the full Luminous range — from single-phase home inverters to three-phase commercial UPS systems. We also supply Eaton Powerware UPS for larger installations. Our team helps you size the right system, handles installation, and provides ongoing maintenance through our AMC services.</p>
+              <p style={{ color: 'var(--muted)' }}>Power cuts are a reality across many parts of Bangalore and Karnataka. A reliable Luminous inverter or UPS system keeps your home, office or business running without disruption. Luminous has been a household name in Indian power backup for decades, offering a wide range of inverters, batteries and solar solutions.</p>
+              <p style={{ color: 'var(--muted)', marginTop: 12 }}>At our <strong>Luminous dealer office in Yelahanka, Bangalore</strong>, we supply the full Luminous range — from single-phase home inverters to three-phase commercial UPS systems. We also supply Eaton Powerware UPS for larger installations.</p>
+              <p style={{ color: 'var(--muted)', marginTop: 12 }}>Looking for <strong>Luminous battery prices in Bangalore</strong>? Contact us for the latest Luminous inverter prices, battery prices and solar panel quotes. Our team helps you size the right system, handles installation, and provides ongoing maintenance through our AMC services.</p>
             </Reveal>
             <Reveal>
               <div className="product" style={{ maxWidth: 280, margin: '0 auto' }}>
                 <div className="product-img" style={{ height: 180 }}>
-                  <img src={IMG.luminous} alt="Luminous Power Technologies logo" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 16 }} loading="lazy" />
+                  <img src={IMG.luminous} alt="Luminous Batteries and Inverters — Authorized Dealer in Bangalore" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 16 }} loading="lazy" />
                 </div>
-                <h4>Luminous Inverters & Solar Panels</h4>
-                <div className="brand">Available through Shree Krupa Enterprises</div>
+                <h4>Luminous Batteries, Inverters & Solar — Authorized Bangalore Dealer</h4>
+                <div className="brand">Shree Krupa Enterprises, Yelahanka, Bangalore</div>
               </div>
             </Reveal>
           </div>
@@ -128,16 +162,16 @@ export default function LuminousInvertersBatteries() {
         <div className="container">
           <SectionHead
             eyebrow="Applications"
-            title="Who needs a Luminous inverter or UPS?"
-            lead="Power backup is essential across homes, offices, shops and institutions. Here are the common use cases we supply for."
+            title="Who needs a Luminous inverter or battery?"
+            lead="Power backup is essential across homes, offices, shops and institutions. Here are the common Luminous product use cases we supply for in Bangalore."
           />
           <div className="panel-row panel-row-2">
             <Reveal>
               <div className="panel">
                 <div className="panel-ic">🏠</div>
                 <div>
-                  <h3>Home Power Backup</h3>
-                  <p>Single-phase inverters and inverter batteries for apartments, villas and independent houses — keeping lights, fans, refrigerators and Wi-Fi running during outages.</p>
+                  <h3>Home Luminous Inverter & Battery</h3>
+                  <p>Single-phase Luminous inverters and inverter batteries for apartments, villas and independent houses — keeping lights, fans, refrigerators and Wi-Fi running during outages. Get Luminous home inverter prices.</p>
                 </div>
               </div>
             </Reveal>
@@ -145,8 +179,8 @@ export default function LuminousInvertersBatteries() {
               <div className="panel">
                 <div className="panel-ic">🏢</div>
                 <div>
-                  <h3>Offices & Commercial</h3>
-                  <p>UPS systems for workstations, servers, POS terminals and office equipment — preventing data loss and downtime during power interruptions.</p>
+                  <h3>Office & Commercial Luminous UPS</h3>
+                  <p>Luminous UPS systems for workstations, servers, POS terminals and office equipment — preventing data loss and downtime during power interruptions.</p>
                 </div>
               </div>
             </Reveal>
@@ -154,8 +188,8 @@ export default function LuminousInvertersBatteries() {
               <div className="panel">
                 <div className="panel-ic">🏥</div>
                 <div>
-                  <h3>Institutions & Healthcare</h3>
-                  <p>Reliable power backup for clinics, hospitals, schools and laboratories where uninterrupted power is critical for equipment and safety.</p>
+                  <h3>Institution & Healthcare Luminous Backup</h3>
+                  <p>Reliable Luminous power backup for clinics, hospitals, schools and laboratories where uninterrupted power is critical for equipment and safety.</p>
                 </div>
               </div>
             </Reveal>
@@ -163,8 +197,8 @@ export default function LuminousInvertersBatteries() {
               <div className="panel">
                 <div className="panel-ic">🏭</div>
                 <div>
-                  <h3>Industrial & IT</h3>
-                  <p>Three-phase UPS and power backup for server rooms, data centres, manufacturing lines and industrial control systems.</p>
+                  <h3>Industrial & IT Luminous UPS</h3>
+                  <p>Three-phase Luminous UPS and power backup for server rooms, data centres, manufacturing lines and industrial control systems in Bangalore.</p>
                 </div>
               </div>
             </Reveal>
@@ -176,14 +210,14 @@ export default function LuminousInvertersBatteries() {
         <div className="container">
           <SectionHead
             eyebrow="Inverter + Battery"
-            title="How do inverter and battery systems work?"
-            lead="An inverter converts DC power from a battery into AC power for your appliances. The battery stores energy when mains power is available and releases it when the power goes out. Choosing the right inverter and battery combination depends on your load requirements and backup duration."
+            title="How do Luminous inverter and battery systems work?"
+            lead="A Luminous inverter converts DC power from a battery into AC power for your appliances. The battery stores energy when mains power is available and releases it when the power goes out. Choosing the right Luminous inverter and battery combination depends on your load requirements and backup duration."
           />
           <div className="check-list" style={{ maxWidth: 700 }}>
-            <li><strong>Inverter:</strong> Converts DC battery power to AC for your appliances — available in single-phase and three-phase models.</li>
-            <li><strong>Battery:</strong> Stores energy for use during outages — tubular and flat-plate batteries are common choices for home and commercial use.</li>
-            <li><strong>UPS:</strong> An uninterruptible power supply provides instant switchover — critical for computers, servers and sensitive electronics.</li>
-            <li><strong>Solar:</strong> Luminous also offers solar panels and solar inverters for renewable energy-based power backup.</li>
+            <li><strong>Luminous Inverter:</strong> Converts DC battery power to AC for your appliances — available in single-phase and three-phase models for homes and businesses.</li>
+            <li><strong>Luminous Battery:</strong> Stores energy for use during outages — tubular and flat-plate batteries are common choices for home and commercial use. Get Luminous battery prices at our Bangalore office.</li>
+            <li><strong>Luminous UPS:</strong> An uninterruptible power supply provides instant switchover — critical for computers, servers and sensitive electronics.</li>
+            <li><strong>Luminous Solar:</strong> Luminous also offers solar panels and solar inverters for renewable energy-based power backup in Bangalore.</li>
           </div>
         </div>
       </section>
@@ -192,17 +226,18 @@ export default function LuminousInvertersBatteries() {
         <div className="container">
           <SectionHead
             eyebrow="Why Shree Krupa"
-            title="Your Bangalore power backup partner"
-            lead="We are a Class-1 Licensed Electrical Contractor based in Yelahanka, Bangalore. We supply Luminous inverters, UPS systems and batteries alongside our full range of MEP services."
+            title="Your authorized Luminous dealer in Bangalore"
+            lead="We are a Class-1 Licensed Electrical Contractor and authorized Luminous dealer in Yelahanka, Bangalore. We supply Luminous inverters, UPS systems and batteries alongside our full range of MEP services."
           />
           <div className="check-list" style={{ maxWidth: 700 }}>
+            <li>Authorized Luminous dealer and distributor in Bangalore</li>
             <li>Class-1 Licensed Electrical Contractor since 2012</li>
-            <li>Authorized channel partner for Luminous/Schneider UPS systems</li>
-            <li>Based in Yelahanka, serving Bangalore and Karnataka</li>
-            <li>Supply Luminous inverters, UPS, batteries and solar panels</li>
+            <li>Luminous dealer office in Yelahanka, serving Bangalore and Karnataka</li>
+            <li>Full range of Luminous inverters, batteries, UPS and solar panels</li>
+            <li>Competitive Luminous battery prices for homes and businesses</li>
             <li>Professional installation, testing and commissioning</li>
             <li>Annual Maintenance Contracts (AMC) for ongoing support</li>
-            <li>Also supply Eaton Powerware UPS, APAR wires and electrical tools — browse our <Link to="/products">electrical products in Bangalore</Link></li>
+            <li>Also supply Eaton Powerware UPS, APAR wires — browse our <Link to="/products">electrical products in Bangalore</Link></li>
           </div>
         </div>
       </section>
@@ -211,7 +246,7 @@ export default function LuminousInvertersBatteries() {
         <div className="container">
           <div className="text-center">
             <span className="eyebrow">FAQs</span>
-            <h2 className="section-title">Luminous Inverters & Batteries — Common Questions</h2>
+            <h2 className="section-title">Luminous Batteries & Inverters — Common Questions</h2>
           </div>
           <FaqAccordion items={faqs} />
         </div>
@@ -219,10 +254,10 @@ export default function LuminousInvertersBatteries() {
 
       <section className="cta-section">
         <div className="container">
-          <span className="eyebrow">Need a Luminous Inverter or UPS?</span>
-          <h2>Get a Quote for Your Power Backup Needs</h2>
-          <p>Tell us about your requirements — home, office or commercial, load capacity and desired backup duration. Our team will recommend the right Luminous inverter, UPS or battery setup for your project.</p>
-          <Link to="/contact" className="btn btn-primary">Request a Quote</Link>
+          <span className="eyebrow">Need Luminous Batteries or Inverters?</span>
+          <h2>Get Luminous Battery Prices in Bangalore</h2>
+          <p>Visit our Luminous dealer office in Yelahanka, Bangalore or call us for Luminous battery prices, inverter quotes and power backup solutions. Free consultation and site assessment.</p>
+          <Link to="/contact" className="btn btn-primary">Visit Our Luminous Office</Link>
           <a href={`tel:${SITE.phone1Tel}`} className="btn btn-outline" style={{ marginLeft: 8 }}>Call {SITE.phone1}</a>
         </div>
       </section>
@@ -237,14 +272,14 @@ export default function LuminousInvertersBatteries() {
           <div className="tile-row tile-grid-2">
             <Reveal>
               <div className="tile">
-                <h3>APAR Wires & Cables</h3>
-                <p>Supplying APAR wires and cables for house wiring, industrial cabling and power distribution projects across Bangalore.</p>
+                <h3>APAR Wires & Cables — Authorized Dealer</h3>
+                <p>Authorized APAR dealer in Bangalore — house wiring, industrial cabling and power distribution. Get APAR wire prices.</p>
                 <Link to="/products/apar-wires-cables" className="tile-link">View APAR Products &rarr;</Link>
               </div>
             </Reveal>
             <Reveal>
               <div className="tile">
-                <h3>Electrical Services</h3>
+                <h3>Electrical Services in Bangalore</h3>
                 <p>Complete MEP services — internal and external electrification, HT power, ELV, AMC and statutory approvals across Bangalore.</p>
                 <Link to="/services" className="tile-link">Our Services &rarr;</Link>
               </div>

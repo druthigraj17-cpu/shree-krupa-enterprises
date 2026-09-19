@@ -3,11 +3,12 @@ import Reveal from '../components/Reveal.jsx';
 import CountUp from '../components/CountUp.jsx';
 import SectionHead from '../components/SectionHead.jsx';
 import SEO from '../components/SEO.jsx';
-import { IMG } from '../data/site.js';
+import { IMG, SITE } from '../data/site.js';
 
 const storyChecklist = [
+    'APAR wires & cables — authorized distributor',
+    'Luminous inverters, batteries & solar panels',
     'UPS sales — Eaton Powerware, Luminous/Schneider',
-    'Apar Wires & Cables — authorized distributor',
   'Internal & external electrification works',
   'Data & networking works',
   'ELV works — fire system, CCTV, PAVA, access control',
@@ -33,21 +34,66 @@ const values = [
   { ic: '🎯', h: 'Client-Centric', p: 'Every solution engineered around client needs, timelines and budgets.' },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "name": "About Shree Krupa Enterprises — APAR Dealer & Luminous Battery Supplier in Bangalore",
+      "description": "Learn about Shree Krupa Enterprises — an authorized APAR wires dealer and Luminous battery supplier in Bangalore. Class-1 Licensed MEP electrical contractor since 2012.",
+      "url": "https://www.shreekrupaenterprise.in/about",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Shree Krupa Enterprises",
+        "url": "https://www.shreekrupaenterprise.in"
+      },
+      "about": {
+        "@type": "LocalBusiness",
+        "name": "Shree Krupa Enterprises",
+        "url": "https://www.shreekrupaenterprise.in",
+        "telephone": SITE.phone1,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "#35, 1st Floor, 8th Main, Anantapur, Yelahanka",
+          "addressLocality": "Bangalore",
+          "addressRegion": "Karnataka",
+          "postalCode": "560064",
+          "addressCountry": "IN"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shreekrupaenterprise.in/" },
+        { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://www.shreekrupaenterprise.in/about" }
+      ]
+    }
+  ]
+};
+
 export default function About() {
   return (
     <>
-      <SEO title="About Us" description="Learn about Shree Krupa Enterprises — a Class-1 Licensed Electrical Contracting company in Bangalore providing MEP, ELV, HT and AMC services since 2012." />
+      <SEO
+        title="About Us — APAR Dealer & Luminous Battery Supplier in Bangalore"
+        description="Shree Krupa Enterprises is an authorized APAR wires dealer and Luminous battery supplier in Bangalore. Class-1 Licensed MEP electrical contractor providing electrical services and products since 2012."
+        canonical="https://www.shreekrupaenterprise.in/about"
+        ogImage="https://www.shreekrupaenterprise.in/images/4.jpg"
+        jsonLd={jsonLd}
+        keywords="about Shree Krupa Enterprises, APAR dealer Bangalore, Luminous battery supplier, electrical contractor Bangalore, MEP contractor Yelahanka, Class-1 electrical contractor"
+      />
 
       <PageHero
         eyebrow="About Us"
         title="Symbol of excellence in MEP solutions"
-        lead="Driving innovation and exceeding client expectations across the MEP project lifecycle."
+        lead="Driving innovation and exceeding client expectations across the MEP project lifecycle. Authorized APAR and Luminous dealer in Bangalore."
         crumb="About Us"
         asideTitle="At a glance"
         asideItems={[
           'Class-1 Licensed Electrical Contractor',
+          'Authorized APAR & Luminous Dealer',
           'Incorporated 2012 · Bangalore',
-          'Serving clients across India',
           'CEIG · ESCOMS · Fire · KSPCB liaisoning',
         ]}
       />
@@ -57,22 +103,23 @@ export default function About() {
           <SectionHead
             eyebrow="Our Story"
             title="Driving innovation in MEP since 2012"
-            lead="A Class-1 Licensed Electrical Contracting company built on innovation, quality and a client-first culture."
+            lead="A Class-1 Licensed Electrical Contracting company and authorized APAR & Luminous dealer built on innovation, quality and a client-first culture."
           />
           <div className="intro-split">
             <Reveal>
-              <p style={{ color: 'var(--muted)', fontSize: '1.05rem' }}>Shree Krupa Enterprises is a <strong>Authorized Distributor For Luminous and Apar Wires</strong>  </p>
-              <p style={{ color: 'var(--muted)', marginTop: 14 }}>Incorporated in 2012 in Bangalore, our team believes in driving innovation and exceeding our clients' expectations — from design and detailed engineering to installation, testing and commissioning.</p>
+              <p style={{ color: 'var(--muted)', fontSize: '1.05rem' }}>Shree Krupa Enterprises is an <strong>Authorized Distributor of APAR wires & cables</strong> and an authorized <strong>Luminous batteries and inverters dealer in Bangalore</strong>.</p>
+              <p style={{ color: 'var(--muted)', marginTop: 14 }}>Incorporated in 2012 in Bangalore, we are a Class-1 Licensed Electrical Contracting company that provides extensive MEP services. Our team believes in driving innovation and exceeding our clients' expectations — from design and detailed engineering to installation, testing and commissioning.</p>
+              <p style={{ color: 'var(--muted)', marginTop: 14 }}>As a trusted channel partner for APAR Industries and Luminous Power Technologies, we supply genuine APAR wires, Luminous batteries, inverters and power backup solutions across Bangalore and Karnataka.</p>
               <div className="pill-row">
-                <span className="pill">MEP · Mechanical · Electrical · Plumbing</span>
-                <span className="pill">Pan-India presence</span>
+                <span className="pill">APAR Authorized Dealer</span>
+                <span className="pill">Luminous Authorized Dealer</span>
                 <span className="pill">Since 2012</span>
               </div>
             </Reveal>
             <Reveal>
               <div className="about-clip" style={{ padding: 0 }}>
                 <div className="about-inner">
-                  <img src={IMG.n5} alt="Shree Krupa Enterprises team" style={{ width: '100%', height: 220, objectFit: 'cover', borderRadius: '16px 16px 0 0', marginBottom: 16 }} loading="lazy" />
+                  <img src={IMG.n5} alt="Shree Krupa Enterprises — APAR and Luminous dealer in Bangalore" style={{ width: '100%', height: 220, objectFit: 'cover', borderRadius: '16px 16px 0 0', marginBottom: 16 }} loading="lazy" />
                   <ul className="check-list" style={{ gridTemplateColumns: '1fr', margin: 0 }}>
                     {storyChecklist.map((it, i) => <li key={i}>{it}</li>)}
                   </ul>

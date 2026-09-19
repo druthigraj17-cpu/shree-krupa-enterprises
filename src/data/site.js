@@ -3,11 +3,23 @@ export const SITE = {
   legal: 'Shree Krupa Enterprises',
   phone1: '+91-81479-76125',
   phone1Tel: '+918147976125',
+  phone2: '+91-97405-76125',
+  phone2Tel: '+919740576125',
   email: 'shreekripaenterprises.blr@gmail.com',
   web: 'www.shreekrupaenterprise.in',
   address1: '#35, 1st Floor, 8th Main, Anantapur,',
   address2: 'Yelahanka, Bangalore - 560064',
   mapsQuery: 'Yelahanka+Bangalore',
+  geo: {
+    latitude: '13.1067',
+    longitude: '77.5710',
+  },
+  social: {
+    facebook: 'https://facebook.com/shreekrupaenterprise',
+    linkedin: 'https://linkedin.com/company/shreekrupaenterprise',
+    instagram: 'https://instagram.com/shreekrupaenterprise',
+    whatsapp: 'https://wa.me/918147976125',
+  },
 };
 
 export const NAV = [

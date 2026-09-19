@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://www.shreekrupaenterprise.in/sitemap.xml
+
+# Disallow admin and internal paths
+Disallow: /src/
+Disallow: /node_modules/

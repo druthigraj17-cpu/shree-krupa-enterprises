@@ -8,7 +8,9 @@ const servicesList = [
   'Electrification / Turnkey Projects',
   'Design & Detailed Engineering',
   'Statutory Approvals (CEIG / ESCOMS / Fire / KSPCB)',
-  'UPS Sales & Service (Eaton / Schneider)',
+  'APAR Wires & Cables Inquiry',
+  'Luminous Batteries & Inverters Inquiry',
+  'UPS Sales & Service (Eaton / Schneider / Luminous)',
   'Data & Networking',
   'ELV Works (Fire, CCTV, PAVA, Access Control)',
   'HT Power Sanction & HT Works',
@@ -20,20 +22,72 @@ const servicesList = [
   'Other',
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "name": "Contact Shree Krupa Enterprises — APAR & Luminous Dealer in Bangalore",
+      "description": "Contact Shree Krupa Enterprises for APAR wires, Luminous batteries, electrical contracting and MEP services in Bangalore. Visit our office in Yelahanka.",
+      "url": "https://www.shreekrupaenterprise.in/contact"
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "Shree Krupa Enterprises",
+      "description": "Authorized APAR wires dealer and Luminous battery supplier in Bangalore. Class-1 MEP electrical contractor.",
+      "url": "https://www.shreekrupaenterprise.in",
+      "telephone": SITE.phone1,
+      "email": SITE.email,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#35, 1st Floor, 8th Main, Anantapur, Yelahanka",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "postalCode": "560064",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": SITE.geo.latitude,
+        "longitude": SITE.geo.longitude
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": ["Bangalore", "Karnataka", "India"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shreekrupaenterprise.in/" },
+        { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.shreekrupaenterprise.in/contact" }
+      ]
+    }
+  ]
+};
+
 export default function Contact() {
   const [sent, setSent] = useState(false);
   return (
     <>
       <SEO
-        title="Contact Shree Krupa Enterprises — Electrical Contractor in Bangalore"
-        description="Contact Shree Krupa Enterprises for electrical contracting, MEP services and electrical product requirements in Bangalore. Based in Yelahanka, serving Karnataka."
+        title="Contact — APAR & Luminous Dealer in Bangalore | Shree Krupa Enterprises"
+        description="Contact Shree Krupa Enterprises for APAR wires, Luminous batteries, electrical contracting and MEP services in Bangalore. Visit our APAR & Luminous office in Yelahanka."
         canonical="https://www.shreekrupaenterprise.in/contact"
+        ogImage="https://www.shreekrupaenterprise.in/images/4.jpg"
+        jsonLd={jsonLd}
+        keywords="contact Shree Krupa Enterprises, APAR office Bangalore, Luminous dealer Bangalore, electrical contractor Yelahanka, MEP services contact"
       />
 
       <PageHero
         eyebrow="Get In Touch"
-        title="Contact Shree Krupa Enterprises"
-        lead="Contact Shree Krupa Enterprises for electrical contracting, MEP services and electrical product requirements in Bangalore. Based in Yelahanka, serving Karnataka."
+        title="Contact Shree Krupa Enterprises — APAR & Luminous Dealer in Bangalore"
+        lead="Contact us for APAR wires, Luminous batteries, electrical contracting and MEP services in Bangalore. Visit our office in Yelahanka, serving Karnataka."
         crumb="Contact"
         asideTitle="Quick contact"
         asideItems={[`Call ${SITE.phone1}`, `Call ${SITE.phone2}`, SITE.email, 'Yelahanka, Bangalore - 560064']}
@@ -41,7 +95,7 @@ export default function Contact() {
 
       <section className="section">
         <div className="container">
-          <SectionHead eyebrow="Reach Out" title="Let's discuss your project" lead="Connect with us through any channel below — we respond to every enquiry within 24 hours." />
+          <SectionHead eyebrow="Reach Out" title="Let's discuss your APAR, Luminous or MEP requirement" lead="Connect with us through any channel below — we respond to every enquiry within 24 hours." />
           <div className="split">
             <div>
               <div className="contact-info">
@@ -49,7 +103,7 @@ export default function Contact() {
                   <div className="info-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg>
                   </div>
-                  <div><h4>Address</h4><p>{SITE.address1}<br />{SITE.address2}</p></div>
+                  <div><h4>APAR & Luminous Office Address</h4><p>{SITE.address1}<br />{SITE.address2}</p></div>
                 </div>
                 <div className="info-card">
                   <div className="info-icon">
@@ -74,7 +128,7 @@ export default function Contact() {
             <div>
               <form className="form" onSubmit={(e) => { e.preventDefault(); setSent(true); e.target.reset(); }}>
                 <h3 style={{ color: 'var(--primary)', marginBottom: 6 }}>Send Us an Enquiry</h3>
-                <p style={{ color: 'var(--muted)', fontSize: '.9rem', marginBottom: 18 }}>Fill in the form and we'll get back within 24 hours.</p>
+                <p style={{ color: 'var(--muted)', fontSize: '.9rem', marginBottom: 18 }}>Fill in the form for APAR wires, Luminous batteries or MEP services — we'll respond within 24 hours.</p>
                 {sent && <div className="form-success" style={{ display: 'block' }}>Thank you! Your enquiry has been sent. Our team will contact you within 24 hours.</div>}
                 <div className="form-row">
                   <div className="form-group"><label>Name*</label><input type="text" name="name" required maxLength="80" /></div>
@@ -82,9 +136,9 @@ export default function Contact() {
                 </div>
                 <div className="form-group"><label>Email*</label><input type="email" name="email" required maxLength="120" /></div>
                 <div className="form-group">
-                  <label>Service Interested In</label>
+                  <label>Service or Product Interested In</label>
                   <select name="service">
-                    <option value="">Select a service...</option>
+                    <option value="">Select a service or product...</option>
                     {servicesList.map((s, i) => <option key={i}>{s}</option>)}
                   </select>
                 </div>
@@ -103,7 +157,7 @@ export default function Contact() {
             src={`https://www.google.com/maps?q=${SITE.mapsQuery}&output=embed`}
             width="100%" height="400" style={{ border: 0, display: 'block' }}
             allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-            title="Shree Krupa Enterprises on Google Maps"
+            title="Shree Krupa Enterprises — APAR & Luminous office on Google Maps in Yelahanka Bangalore"
           />
         </div>
       </section>
@@ -111,8 +165,8 @@ export default function Contact() {
       <section className="cta-section">
         <div className="container">
           <span className="eyebrow">Prefer to Talk?</span>
-          <h2>Call Us Directly</h2>
-          <p>Speak to our engineers now for immediate consultation on your MEP requirement.</p>
+          <h2>Call Us for APAR Wires & Luminous Batteries</h2>
+          <p>Speak to our engineers now for immediate consultation on APAR wire prices, Luminous battery quotes or MEP requirements.</p>
           <a href={`tel:${SITE.phone1Tel}`} className="btn btn-primary">📞 {SITE.phone1}</a>
           <a href={`https://wa.me/${SITE.phone1Tel.replace('+', '')}`} className="btn btn-outline" style={{ marginLeft: 8 }}>WhatsApp</a>
         </div>
